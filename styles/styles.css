@@ -20,6 +20,9 @@ aside img {
 main img {
     width: 150px;
     height: auto;
+    border: 1px solid steelblue;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
 }
 
 nav {
@@ -52,5 +55,5 @@ p {
 footer {
     margin-top: 15px;
     border-top: 1px solid #000;
-    text text-align: center;
+    text-align: center;
 }
