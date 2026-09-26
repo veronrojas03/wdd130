@@ -1,0 +1,164 @@
+/* Document Color Scheme and Font Variables */
+:root {
+    --primary-color: #055a05;
+    /* Forest Green */
+    --secondary-color: #f4a261;
+    /* Warm Sand */
+    --accent1-color: #264653;
+    /* Dark Slate Blue */
+    --accent2-color: #e9c46a;
+    /* Light Golden Yellow */
+    --heading-font: "Georgia", "Times New Roman", serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
+/* CSS Box-Model Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Document Body Styling */
+body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+    background-color: #f8f9fa;
+}
+
+/* Container Centering and Width Limitation */
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+/* Header and Main Navigation Bar Layout */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    padding: 10px 16px;
+}
+
+header img {
+    width: 80px;
+    height: auto;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 16px;
+}
+
+header nav a {
+    color: var(--accent2-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Heading Typography */
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+/* Basic Spacing for Block Elements */
+nav,
+p,
+section,
+article {
+    margin: 16px;
+    padding: 8px;
+}
+
+/* Hero Section with Relative Positioning */
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Absolutely Positioned Title Overlay */
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    background-color: var(--accent1-color);
+    color: #ffffff;
+    opacity: 0.85;
+}
+
+/* Absolutely Positioned Article Overlay */
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+}
+
+/* Floated Image Inside Hero Article */
+.hero article img {
+    float: right;
+    width: 125px;
+    height: auto;
+    margin-left: 12px;
+    border-radius: 4px;
+}
+
+/* Clearfix for Floated Image in Article */
+.hero article::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Footer Section Styling */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 10px 16px;
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Social Media Navigation Links */
+.socialmedia {
+    display: flex;
+    gap: 12px;
+    margin: 0;
+    padding: 0;
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 32px;
+    height: 32px;
+}
