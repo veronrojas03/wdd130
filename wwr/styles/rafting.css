@@ -1,13 +1,13 @@
 /* Document Color Scheme and Font Variables */
 :root {
-    --primary-color: #055a05;
-    /* Forest Green */
-    --secondary-color: #f4a261;
-    /* Warm Sand */
-    --accent1-color: #264653;
-    /* Dark Slate Blue */
-    --accent2-color: #e9c46a;
-    /* Light Golden Yellow */
+    --primary-color: #001021;
+    /* Ink Black */
+    --secondary-color: #1481BA;
+    /* Ocean Blue */
+    --accent1-color: #034748;
+    /* Dark Teal */
+    --accent2-color: #11B5E4;
+    /* Sky Surge */
     --heading-font: "Georgia", "Times New Roman", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
