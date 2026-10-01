@@ -1,11 +1,21 @@
+:root {
+    --margin-default: 1rem;
+    /* the margin that i will use for default */
+    --color-1: darkblue;
+    /* darkblue */
+    --border-default: 1px solid;
+    /* Border for default */
+
+}
+
 main {
     max-width: 840px;
 }
 
 aside {
     width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0, 0, 0, 0.2);
+    margin: var(--margin-default);
+    border: var(--border-default) rgb(0, 0, 0, 0.2);
     padding: 1rem;
     background-color: #eee;
     color: #333;
@@ -20,13 +30,13 @@ aside img {
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid steelblue;
+    border: var(--border-default) steelblue;
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
 
 nav {
-    background-color: darkblue;
+    background-color: var(--color-1);
     padding: 10px;
 }
 
@@ -37,13 +47,13 @@ nav a {
 }
 
 h1 {
-    color: darkblue;
+    color: var(--color-1);
 }
 
 img {
     width: 150px;
     height: auto;
-    border: 1px solid black;
+    border: var(--border-default) black;
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
@@ -53,7 +63,7 @@ p {
 }
 
 footer {
-    margin-top: 1em;
-    border-top: 1px solid #000;
+    margin-top: var(--margin-default);
+    border-top: var(--border-default) #000;
     text-align: center;
 }
