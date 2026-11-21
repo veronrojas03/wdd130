@@ -1,0 +1,108 @@
+/*CSS is realy hard for my and I am trying this design for futures assignments too, probably I will not use all the variables but I will changing this.*/
+:root {
+    /* Colores */
+    --primary-color: #16324f;
+    /*encabezados, enlases importantes y bordes principales*/
+    --secondary-color: #d9822b;
+    /*detalles bordes y fondos*/
+    --accent1-color: #2a7b88;
+    /*fondo general, garantiza que el texto se vea bien*/
+    --accent2-color: #f4f1ea;
+    /*fondo general, garantiza que el texto se vea bien*/
+
+    /* Tipografías */
+    --heading-font: "Georgia", "Times New Roman", serif;
+    --body-font: "Arial", "Helvetica", sans-serif;
+
+    /* Bordes y radios */
+    --border: 1px solid rgb(0 0 0 / 1);
+    /*estandar*/
+    --border-subtle: 1px solid rgb(22 50 79 / 0.2);
+    /*estandar pero en azul marino*/
+    --border-radius: 8px;
+    /*redondeado*/
+
+    /* Dimensiones y espaciado */
+    --max-width: 960px;
+    /*anco maximo de la pagina*/
+    --spacing-sm: 0.5rem;
+    /*espacios entre iconos, titulos y subtitulos*/
+    --spacing-md: 1rem;
+    /*separacion de cajas y parrafos*/
+    --spacing-lg: 2rem;
+    /*separar bloques y secciones*/
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--body-font);
+    background-color: var(--accent2-color);
+    color: black;
+}
+
+header,
+main,
+footer {
+    width: var(--max-width);
+    margin: 0 auto;
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+nav,
+p,
+section,
+article {
+    margin: var(--spacing-md);
+    padding: var(--spacing-sm);
+}
+
+.socialmedia a {
+    text-decoration: none;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--secondary-color);
+}
+
+article {
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+    left: 24px;
+    background-color: var(--secondary-color);
+    padding: var(--spacing-md);
+    color: var(--primary-color);
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+    height: auto;
+    margin-left: var(--spacing-sm);
+}
