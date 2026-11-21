@@ -1,26 +1,16 @@
-/*CSS is realy hard for my and I am trying this design for futures assignments too, probably I will not use all the variables but I will changing this.*/
+/*CSS is realy hard for my and I am trying this design for futures assignments too, probably I will not use all the variables but I will changing this. (the audit ask me for delate it)*/
 :root {
     /* Colores */
     --primary-color: #16324f;
     /*encabezados, enlases importantes y bordes principales*/
     --secondary-color: #d9822b;
     /*detalles bordes y fondos*/
-    --accent1-color: #2a7b88;
-    /*fondo general, garantiza que el texto se vea bien*/
     --accent2-color: #f4f1ea;
     /*fondo general, garantiza que el texto se vea bien*/
 
     /* Tipografías */
     --heading-font: "Georgia", "Times New Roman", serif;
     --body-font: "Arial", "Helvetica", sans-serif;
-
-    /* Bordes y radios */
-    --border: 1px solid rgb(0 0 0 / 1);
-    /*estandar*/
-    --border-subtle: 1px solid rgb(22 50 79 / 0.2);
-    /*estandar pero en azul marino*/
-    --border-radius: 8px;
-    /*redondeado*/
 
     /* Dimensiones y espaciado */
     --max-width: 960px;
@@ -29,8 +19,6 @@
     /*espacios entre iconos, titulos y subtitulos*/
     --spacing-md: 1rem;
     /*separacion de cajas y parrafos*/
-    --spacing-lg: 2rem;
-    /*separar bloques y secciones*/
 }
 
 * {
@@ -90,7 +78,7 @@ h1 {
     background-color: var(--secondary-color);
 }
 
-article {
+.hero article {
     position: absolute;
     bottom: 24px;
     right: 24px;
